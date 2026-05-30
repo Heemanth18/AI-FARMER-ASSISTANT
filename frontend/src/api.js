@@ -1,4 +1,4 @@
-const BASE = '/api/v1'
+const BASE = import.meta.env.VITE_API_URL || 'https://ai-farmer-backend.onrender.com/api/v1'
 
 // 🔑 Your Groq API key — only lives here, never shown on page
 const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY
