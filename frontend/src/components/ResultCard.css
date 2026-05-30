@@ -1,0 +1,123 @@
+.result-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--green-soft);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  margin-top: 24px;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.result-badge {
+  background: var(--green-dark);
+  color: var(--cream);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.result-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-ghost:hover {
+  border-color: var(--green-soft);
+  color: var(--green-mid);
+  background: var(--cream);
+}
+
+.btn-ghost.danger:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.result-question {
+  display: flex;
+  gap: 10px;
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-bottom: 18px;
+}
+
+.qlabel {
+  font-weight: 700;
+  color: var(--green-soft);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.result-question p {
+  font-size: 14px;
+  color: var(--text-mid);
+  font-style: italic;
+}
+
+.result-answer p {
+  font-size: 15px;
+  color: var(--text-dark);
+  line-height: 1.75;
+  margin-bottom: 8px;
+}
+
+.result-meta {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 8px;
+}
+
+.meta-chip {
+  font-size: 11px;
+  background: var(--cream-dark);
+  color: var(--text-muted);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.context-box {
+  margin-top: 16px;
+  background: var(--green-dark);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+
+.context-title {
+  font-size: 11px;
+  color: var(--green-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.context-text {
+  font-size: 11px;
+  color: rgba(245,240,232,0.75);
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.6;
+  font-family: 'Courier New', monospace;
+}

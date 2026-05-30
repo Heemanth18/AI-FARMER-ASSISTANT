@@ -1,0 +1,88 @@
+/* Google Fonts — load all 4 script fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green-dark:   #1a3a1f;
+  --green-mid:    #2d5a35;
+  --green-soft:   #4a8c56;
+  --green-light:  #7dbf82;
+  --cream:        #f5f0e8;
+  --cream-dark:   #ede6d6;
+  --amber:        #c8820a;
+  --amber-light:  #f0a830;
+  --soil:         #6b4226;
+  --white:        #ffffff;
+  --text-dark:    #1c2b1e;
+  --text-mid:     #3d5440;
+  --text-muted:   #7a9080;
+  --danger:       #c0392b;
+  --card-bg:      #ffffff;
+  --border:       #dde8dd;
+  --shadow-sm:    0 2px 8px rgba(26,58,31,0.08);
+  --shadow-md:    0 6px 24px rgba(26,58,31,0.12);
+  --shadow-lg:    0 16px 48px rgba(26,58,31,0.16);
+  --radius-sm:    8px;
+  --radius-md:    14px;
+  --radius-lg:    22px;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  /* Active font switches per language */
+  --font-active:  'DM Sans', system-ui, sans-serif;
+  --transition:   all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-active);
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* Non-latin scripts need slightly larger base size for readability */
+:lang(kn) body,
+:lang(te) body,
+:lang(ta) body {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+button {
+  font-family: var(--font-active);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, textarea, select {
+  font-family: var(--font-active);
+  outline: none;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream-dark); }
+::-webkit-scrollbar-thumb { background: var(--green-light); border-radius: 3px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.fade-up { animation: fadeUp 0.4s ease both; }
